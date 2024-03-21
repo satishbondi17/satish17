@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+         background-image: url(https://imgs.search.brave.com/h2_G0eqXEzxjW9q9avbIeIzCaxqOt-XpKMmGTYRm7Zk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMC8w/Ni8xMy8xNy81MS9t/aWxreS13YXktNTI5/NTE2MF82NDAuanBn);
+    }
+    h1 {
+
+        color: #ef0b2e;
+        margin-bottom: 20px;
+
+    }
+
+    center {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        color: #1bce14;
+        background-color: #572c04;
+    }
+    tr{
+        background-color: #ef0b2e;
+        color: #1bce14;
+    }
+    input[type="submit"] {
+        background-color: #1cef26;
+    }
+
+</style>
+</head>
+<body>
+<center>
+    <h1>Welcome to Login Page </h1>
+
+
+
+    <form action="{{ url_for('login') }}" method="POST">
+
+    <table border="1">
+        <tr>
+        <th>UserId </th> <td>  <input type="number" name="uid">  </td>
+        </tr>
+        <tr>
+        <th>Password </th> <td>  <input type="password" name="pass">  </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"> <input type="submit" value="Login">
+
+            </td>
+
+
+
+        </tr>
+
+    </table>
+    </form>
+</center>
+</body>
+</html>
+
+
+
+        </tr>
+
+    </table>
+    </form>
+</center>

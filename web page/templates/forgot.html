@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+</head>
+<body>
+<center>
+    <h1>Forgot Password</h1>
+   <form action="{{ url_for('forgot_password') }}" method="POST">
+        <label for="password">Enter your new password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="password">retype password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    </center>
+</body>
+</html>

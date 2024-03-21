@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body{
+            text-align: center;
+            color:rgb(118, 77, 156);
+            background-image: url(https://imgs.search.brave.com/EFbsfJ5pvnPxtH4aCZcu3P8y4QIGOgRurezFpa9gE8Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8w/NS8wNS8wMi8zNy9z/dW5zZXQtMTM3MzE3/MV8xMjgwLmpwZw);
+
+        }
+
+
+
+        h3{
+            text-decoration: dashed;
+            text-align: center;
+            text-decoration-color: blue;
+            color: rgb(250, 4, 4);
+
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>Welcome to Dashboard</h1>
+
+    <h3>Name: {{session["fullname"]}} </h3>
+    <a href="{{url_for('logout')}}"><button> Logout</button></a><br><br>
+    <a href="{{url_for('delete')}}"><button> delete</button></a><br><br>
+     <a href="{{url_for('update')}}"><button> update</button></a><br><br>
+
+
+</center>
+</body>
+</html>

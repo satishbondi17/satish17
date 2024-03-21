@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             background-image: url(https://imgs.search.brave.com/h2_G0eqXEzxjW9q9avbIeIzCaxqOt-XpKMmGTYRm7Zk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMC8w/Ni8xMy8xNy81MS9t/aWxreS13YXktNTI5/NTE2MF82NDAuanBn);
+
+        h2 {
+            color: #d8158d;
+            margin-bottom: 20px;
+
+        }
+        p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+        center {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #1bce14;
+        }
+        th {
+            background-color: #e20a0a;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #1bce14;
+            border-radius: 3px;
+        }
+        input[type="Submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="Submit"]:hover {
+            background-color: #065e0a;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h2>Welcome to Registration</h2>
+
+    <form action="/register" method="POST">
+        <table>
+            <tr>
+                <th>UserId</th> <td> <input type="text" name="uid"></td>
+            </tr>
+            <tr>
+                <th>Password</th> <td> <input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <th>Full Name</th> <td> <input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>Email</th> <td> <input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>PhoneNo</th> <td> <input type="number" name="phno"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gn" value="Male">Male
+                    <input type="radio" name="gn" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="Submit" value="Register"> </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

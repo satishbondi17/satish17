@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        body{
+
+
+
+                font-family: 'Segoe UI', Tahoma, sans-serif;
+                font-size: 100%;
+                background-image: url(https://imgs.search.brave.com/4JB6z_PbyYxc6mXJxTU1SPqsWigiRYXF_n94QkCKVPw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg3/MTAyNTk4L3Bob3Rv/L2dvbGQtYmFja2dy/b3VuZC53ZWJwP2I9/MSZzPTE3MDY2N2Em/dz0wJms9MjAmYz1x/ZEFKaU5mcmFaMHZ6/UnJ0YUJoQ0I1dGZW/WVJKcTNiOUpBUktK/aGJxZzVjPQ);
+        }
+        button{
+            background-color: blue;
+            color: rgb(250, 13, 80);
+            text-decoration: dotted solid blue;
+            scroll-padding: auto;
+            text-decoration: underline;
+            text-decoration-color: rgb(195, 182, 182);
+        }
+        h1{
+            color: blueviolet;
+            text-decoration:underline  2px black ;
+
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>Welcome to Home page</h1><br>
+    <a href="{{ url_for('register') }}"><button> Register</button></a> </br></br>
+
+    <a href="{{url_for('login')}}"><button> Login</button></a><br><br>
+
+
+</center>
+</body>
+</html>
